@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 mt-5">
-                    <carousel class="product-slider" :items="3" :nav="false" :autoplay="true">
+                    <carousel class="product-slider" :items="3" :nav="false" :autoplay="true" :dots="false">
                         <div class="product-item">
                             <div class="pi-pic">
                                 <img src="/img/mickey-shirt-0.jpg" alt="" />
@@ -12,7 +12,9 @@
                                     <li class="w-icon active">
                                         <a href="#"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="product.html">+ Quick View</a></li>
+                                    <li class="quick-view">
+                                        <router-link  to="/product">+ Quick View</router-link>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="pi-text">
